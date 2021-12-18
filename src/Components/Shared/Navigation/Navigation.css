@@ -1,0 +1,41 @@
+body{
+    overflow-x: hidden;
+}
+
+.user-img {
+    width: 60px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.logo_img{
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+}
+.login-or-signup .login-btn{
+    background: crimson;
+    padding: 6px 25px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    outline: none;
+    transition: all 0.5s;
+}
+.login-or-signup .login-btn:hover{
+    background: transparent;
+    border: 2px solid rgb(11, 2, 138);
+}
+
+.custome-bg {
+    background: rgba(235, 229, 229, 0.945);
+}
+.nav_link{
+    font-size: 16px;
+    transition: all 0.5s !important;
+    font-weight: 500;
+}
+.nav_link:hover{
+    color: red !important;
+    font-weight: 500;
+}

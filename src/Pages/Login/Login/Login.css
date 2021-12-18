@@ -1,0 +1,9 @@
+.login_btn{
+    background: rgb(121, 2, 219);
+    padding: 8px 25px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+}

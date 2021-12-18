@@ -1,0 +1,50 @@
+.bashboard-manu {
+    background: #000000;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+
+.user {
+    color: #fff;
+}
+
+.user img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.logOut_btn{
+    background: crimson;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    color: #ffff;
+    margin-top: 10px;
+}
+
+.all-order li {
+    list-style: none;
+}
+
+.all-order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.active {
+    background: rgba(221, 217, 217, 0.376);
+    border-radius: 10px;
+}
+
+.all-order:hover {
+    background: rgba(221, 217, 217, 0.376);
+    border-radius: 10px;
+}
