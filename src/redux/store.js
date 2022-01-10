@@ -1,9 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import bookReducer from "./slices/serviceSlice";
+import userSlice from "./slices/serviceSlice";
 
 export const store = configureStore({
   reducer: {
-    books: bookReducer,
-    details: bookReducer,
+    user: userSlice,
   },
 });

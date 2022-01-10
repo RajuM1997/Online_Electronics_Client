@@ -1,40 +1,22 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import service from "../../Components/Data/servicedb.json";
+import { createSlice } from "@reduxjs/toolkit";
 
-export const fetchServices = createAsyncThunk("book/fetchBooks", async () => {
-  // console.log("hi", response);
-  const response = await fetch(
-    "https://nameless-atoll-45965.herokuapp.com/service"
-  ).then((res) => res.json());
-  return response;
-});
-// export const fetchServicedet = createAsyncThunk(
-//   "details/fetchServicedet",
-//   async (id) => {
-//     // console.log("hi", response);
-//     const response = await fetch(`http://localhost:5000/service/${id}`).then(
-//       (res) => res.json()
-//     );
-//     return response;
-//   }
-// );
-
-const serviceSlice = createSlice({
-  name: "service",
+const userSlice = createSlice({
+  name: "user",
   initialState: {
-    disService: [],
+    userAuth: [],
+    loading: true,
   },
-  extraReducers: (builder) => {
-    builder.addCase(fetchServices.fulfilled, (state, action) => {
-      state.disService = action.payload;
-    });
-    builder.addCase(fetchServices.pending, (state, action) => {
-      state.disService = action.payload;
-    });
-    // builder.addCase(fetchServicedet.fulfilled, (state, action) => {
-    //   state.disService = action.payload;
-    // });
+  reducers: {
+    addUserAuth: (state, action) => {
+      state.userAuth = action.payload;
+    },
+    removeUserAuth: (state, action) => {
+      state.userAuth = action.payload;
+    },
+    handleLoading: (state, action) => {
+      state.loading = action.payload;
+    },
   },
 });
-
-export default serviceSlice.reducer;
+export const { addUserAuth, removeUserAuth, handleLoading } = userSlice.actions;
+export default userSlice.reducer;

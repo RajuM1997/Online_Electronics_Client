@@ -22,10 +22,6 @@ body{
     outline: none;
     transition: all 0.5s;
 }
-.login-or-signup .login-btn:hover{
-    background: transparent;
-    border: 2px solid rgb(11, 2, 138);
-}
 
 .custome-bg {
     background: rgba(235, 229, 229, 0.945);

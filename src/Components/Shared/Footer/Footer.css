@@ -1,3 +1,28 @@
 .row{
     color: rgb(53, 53, 53);
 }
+.service h6{
+    cursor: pointer;
+}
+.footer_btn input{
+    border: none;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    outline: none;
+    margin: 10px 0;
+}
+.footer_btn input:focus{
+    border: none;
+    border-bottom: 1px solid rgb(78, 77, 77);
+    width: 100%;
+}
+.footer_btn button{
+    background: #E26D2F;
+    border: none;
+    padding: 10px 35px;
+    color: #fff;
+    font-weight: 500;
+}
+.copy_right p{
+    font-weight: 500;
+}

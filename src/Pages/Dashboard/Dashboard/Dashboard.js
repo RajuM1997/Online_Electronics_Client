@@ -6,7 +6,7 @@ import "./Dashboard.css";
 const Dashboard = () => {
   return (
     <aside>
-      <div className="dashboard">
+      <div className="dashboard pt-5 mt-4">
         <div className="admin-box">
           <div className="row">
             <div className="col-md-3">
@@ -38,7 +38,7 @@ const Dashboard = () => {
                         }}
                         to="/dashboard"
                       >
-                        Dashboard
+                        User Profile
                       </NavLink>
                     </li>
                   </div>
@@ -61,40 +61,6 @@ const Dashboard = () => {
                   </div>
                   <div className="all-order">
                     <div className="icon pe-3">
-                      <i className="fas fa-shopping-cart"></i>
-                    </div>
-                    <li className="admin-menu p-2">
-                      <NavLink
-                        style={{
-                          textDecoration: "none",
-                          color: "#fff",
-                          background: "none",
-                        }}
-                        to="/dashboard/myOrder"
-                      >
-                        All Order
-                      </NavLink>
-                    </li>
-                  </div>
-                  <div className="all-order">
-                    <div className="icon pe-3">
-                      <i className="fas fa-baby-carriage"></i>
-                    </div>
-                    <li className="admin-menu p-2">
-                      <NavLink
-                        style={{
-                          textDecoration: "none",
-                          color: "#fff",
-                          background: "none",
-                        }}
-                        to="/dashboard/addProduct"
-                      >
-                        Add Product
-                      </NavLink>
-                    </li>
-                  </div>
-                  <div className="all-order">
-                    <div className="icon pe-3">
                       <i className="fas fa-baby-carriage"></i>
                     </div>
                     <li className="admin-menu p-2">
@@ -106,7 +72,7 @@ const Dashboard = () => {
                         }}
                         to="/dashboard/myOrder"
                       >
-                        My Order
+                        My Services
                       </NavLink>
                     </li>
                   </div>
@@ -121,43 +87,9 @@ const Dashboard = () => {
                           color: "#fff",
                           background: "none",
                         }}
-                        to="/dashboard/makeAdmin"
+                        to="/dashboard/review"
                       >
-                        Make Admin
-                      </NavLink>
-                    </li>
-                  </div>
-                  <div className="all-order">
-                    <div className="icon pe-3">
-                      <i class="fas fa-truck"></i>
-                    </div>
-                    <li className="admin-menu p-2">
-                      <NavLink
-                        style={{
-                          textDecoration: "none",
-                          color: "#fff",
-                          background: "none",
-                        }}
-                        to="/dashboard/mangeOrder"
-                      >
-                        Mange Order
-                      </NavLink>
-                    </li>
-                  </div>
-                  <div className="all-order">
-                    <div className="icon pe-3">
-                      <i class="fas fa-user-cog"></i>
-                    </div>
-                    <li className="admin-menu p-2">
-                      <NavLink
-                        style={{
-                          textDecoration: "none",
-                          color: "#fff",
-                          background: "none",
-                        }}
-                        to="/dashboard/mangeProduct"
-                      >
-                        Mange Product
+                        Review
                       </NavLink>
                     </li>
                   </div>
@@ -165,23 +97,6 @@ const Dashboard = () => {
                     <div className="icon pe-3">
                       <i className="fas fa-ice-cream"></i>
                     </div>
-                  </div>
-                  <div className="all-order">
-                    <div className="icon pe-3">
-                      <i class="fab fa-cc-paypal"></i>
-                    </div>
-                    <li className="admin-menu p-2">
-                      <NavLink
-                        style={{
-                          textDecoration: "none",
-                          color: "#fff",
-                          background: "none",
-                        }}
-                        to="/dashboard/payment"
-                      >
-                        Payment
-                      </NavLink>
-                    </li>
                   </div>
                 </div>
               </div>

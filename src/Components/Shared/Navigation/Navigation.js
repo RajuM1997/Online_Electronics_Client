@@ -1,13 +1,15 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import useFirebase from "../../Hook/Usefirebase";
 import "./Navigation.css";
 
 const Navigation = () => {
-  const { user, handleLogOut } = useFirebase();
+  const user = useSelector((state) => state.user.userAuth);
+  const { logOut } = useFirebase();
   return (
-    <Navbar className="custome-bg" variant="dark" expand="lg" fixed="top">
+    <Navbar bg="light" variant="light" expand="lg" fixed="top">
       <Container>
         <Navbar.Brand as={Link} className="text-dark" to="/">
           {/* <img className="logo_img pe-2" src={logo} alt="" /> */}
@@ -23,7 +25,7 @@ const Navigation = () => {
             <Nav.Link as={Link} to="/home" className="text-dark nav_link">
               Home
             </Nav.Link>
-            {user.email && (
+            {user?.email && (
               <Nav.Link
                 as={Link}
                 to="/dashboard"
@@ -32,9 +34,9 @@ const Navigation = () => {
                 Dashboard
               </Nav.Link>
             )}
-            <Nav.Link as={Link} to="/blog" className="text-dark nav_link">
+            {/* <Nav.Link as={Link} to="/blog" className="text-dark nav_link">
               Blog
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link as={Link} to="/about" className="text-dark nav_link">
               About
             </Nav.Link>
@@ -51,7 +53,7 @@ const Navigation = () => {
           ) : (
             <Nav.Link as={Link} to="/login">
               <div className="login-or-signup">
-                <button onClick={handleLogOut} className="login-btn">
+                <button onClick={logOut} className="login-btn">
                   Log Out
                 </button>
               </div>

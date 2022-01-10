@@ -48,7 +48,7 @@ const Work = () => {
   };
   return (
     <section>
-      <div className="container">
+      <div className="container mb-5">
         <div className="work_text text-center py-5">
           <h1>
             Elecron <span>Work</span>

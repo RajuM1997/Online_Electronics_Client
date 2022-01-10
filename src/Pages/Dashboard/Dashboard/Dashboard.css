@@ -4,17 +4,6 @@
     overflow-y: scroll;
 }
 
-
-.user {
-    color: #fff;
-}
-
-.user img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    border-radius: 50%;
-}
 .logOut_btn{
     background: crimson;
     padding: 6px 20px;

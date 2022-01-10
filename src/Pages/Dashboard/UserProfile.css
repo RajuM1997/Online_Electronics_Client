@@ -1,0 +1,41 @@
+.profile{
+    height: 100vh;
+}
+.user-img{
+    width: 150px;
+    height: 150px;
+}
+.user-img img{
+    width:100%;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+}
+.user-info{
+    width: 500px;
+}
+.user-info h4{
+    font-size: 18px;
+    color: #333;
+}
+.user-info h4 .info{
+    margin-left: 70px;
+}
+.user-info h4 .info-last{
+    margin-left: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+    .user-info{
+         width: 100%;
+      }
+    .user-info h4 .info{
+        margin-left: 30px;
+      }
+    .user-info h4 .info-last{
+        margin-left: 20px;
+      }
+    .user-info h4 .email{
+          margin-left: 0px;
+          padding: 0;
+      }
+}

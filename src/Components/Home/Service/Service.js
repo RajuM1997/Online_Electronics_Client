@@ -2,18 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Card, CardGroup, Col, Container, Row, Spinner } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Service.css";
-import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
-import { fetchServices } from "../../../redux/slices/serviceSlice";
 
 const Service = () => {
-  // const [services, setServices] = useState([]);
+  const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(false);
-  const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchServices());
+    fetch(`https://nameless-atoll-45965.herokuapp.com/service`)
+      .then((res) => res.json())
+      .then((data) => setServices(data));
   }, []);
-  const services = useSelector((state) => state.books.disService);
   return (
     <section>
       <Container className="py-5">
